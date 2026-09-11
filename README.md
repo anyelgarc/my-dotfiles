@@ -37,6 +37,6 @@ In ``~/.config/rofi/launchers/type-3`` u can change any parameters too for the l
 
 If you want to change the text of the notify-send when you take a screenshot, and you want to change your output directory, you need to go:
 
-	``~/.config/hypr/scripts/function_screenshot/``
+	- ``~/.config/hypr/scripts/function_screenshot/``
 
 
