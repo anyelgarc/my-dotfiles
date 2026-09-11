@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
+# Modify this to change your output directory.
 SAVE_DIR="$HOME/Pictures/Capturas"
+
 mkdir -p "$SAVE_DIR"
 FILE="$SAVE_DIR/image-selected-$(date '+%Y-%m-%d_%H-%M-%S').png"
 FRAME=$(mktemp --suffix=.png)
@@ -59,4 +61,4 @@ descongelar
 trap - EXIT INT TERM HUP
 
 wl-copy --type image/png < "$FILE"
-notify-send "Captura guardada" "$FILE" -i "$FILE"
+notify-send "Image in clipboard" "$FILE" -i "$FILE"
